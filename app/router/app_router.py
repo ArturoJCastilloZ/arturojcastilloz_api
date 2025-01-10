@@ -1,12 +1,11 @@
-from fastapi import APIRouter, Depends
-from app.auth.auth import validate_api_key
-from app.services.firebase_services import FirebaseServices 
+from fastapi import APIRouter
+from app.services.firebase_services import FirebaseServices
 
 router = APIRouter()
 
 @router.get("/", tags=["Default"])
 async def root():
-    return {"message": "Bienvenido a Firebase API"}
+        return {"message": "Bienvenido a Firebase API"}
 
 @router.get(
     "/about", 

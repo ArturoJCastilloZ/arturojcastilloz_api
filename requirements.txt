@@ -2,3 +2,4 @@ fastapi
 firebase-admin
 python-dotenv
 uvicorn
+python-jose
