@@ -23,3 +23,7 @@ class Settings:
     def get_database_url():
         url = os.getenv("URL")
         return url
+    
+    def get_storage_bucket():
+        url = os.getenv("FIREBASE_STORAGE")
+        return url

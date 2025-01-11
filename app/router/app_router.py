@@ -25,6 +25,15 @@ async def Header_Section():
     return FirebaseServices.get_headers_section()
 
 @router.get(
+    "/images",
+    tags=["Images"],
+    description="Se obtiene una lista de opciones que se muestran en el encabezado\
+        y también sus enlaces."
+)
+async def Fetch_images():
+    return FirebaseServices.fetch_images()
+
+@router.get(
     "/hero",
     tags=["Hero"],
     description="Listado de información principal del siito."
