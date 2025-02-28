@@ -5,6 +5,9 @@ from app.utils.tags import TAGS_METADATA
 
 origins = [
     "http://localhost:4200",
+    "http://localhost:3000",
+    "https://www.arturocasillo.dev",
+    "https://www.arturocastillo.dev",
 ]
 
 app = FastAPI(
